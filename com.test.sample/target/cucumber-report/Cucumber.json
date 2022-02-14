@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-14T16:00:57.573Z",
+        "line": 14,
+        "name": "Verify that user is able to calculate the home loan",
+        "description": "",
+        "id": "loan-calculator-feature;verify-that-user-is-able-to-calculate-the-home-loan;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15861529700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user access URL",
+            "match": {
+              "location": "stepdefinitions.StepDefinitionCalculator.userAccessUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 635984400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the information in details section with given detailsSingledependants0andHome to live inproperty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Single",
+                  "offset": 61
+                },
+                {
+                  "val": "0",
+                  "offset": 77
+                },
+                {
+                  "val": "Home to live in",
+                  "offset": 81
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitionCalculator.enterTheInformationInDetailsSection(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 409904300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the information in your earnings section80000and10000otherincome",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80000",
+                  "offset": 48
+                },
+                {
+                  "val": "10000",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitionCalculator.enterTheInformationInEarningsSection(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 805858900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the information in your expenses section500repayments0otherloan100commitments0creditcard10000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 48
+                },
+                {
+                  "val": "0",
+                  "offset": 61
+                },
+                {
+                  "val": "100",
+                  "offset": 71
+                },
+                {
+                  "val": "0",
+                  "offset": 85
+                },
+                {
+                  "val": "10000",
+                  "offset": 96
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitionCalculator.enterTheInformationInExpenseSection(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1254103900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should validate the correct estimation$482,000 is calculated or not",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$482,000",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitionCalculator.validateTheCorrectEstimationIsCalculatedOrNot(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 418884400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should click on startOver it should clear the form",
+            "match": {
+              "location": "stepdefinitions.StepDefinitionCalculator.validateTheStartOverForm()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Loan Calculator feature",
+    "description": "",
+    "id": "loan-calculator-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/loanCalculator.feature",
+    "tags": []
+  }
+]

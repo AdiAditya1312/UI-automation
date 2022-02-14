@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.911">
+    <testcase classname="Loan Calculator feature" name="Verify that user is able to calculate the home loan" time="19.521">
+        <system-out><![CDATA[Given user access URL.......................................................passed
+When I enter the information in details section with given detailsSingledependants0andHome to live inproperty.passed
+When I enter the information in your earnings section80000and10000otherincome.passed
+When I enter the information in your expenses section500repayments0otherloan100commitments0creditcard10000.passed
+Then I should validate the correct estimation$482,000 is calculated or not..passed
+Then I should click on startOver it should clear the form...................passed
+]]></system-out>
+    </testcase>
+</testsuite>
